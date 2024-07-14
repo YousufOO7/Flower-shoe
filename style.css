@@ -66,24 +66,132 @@ body{
     width: 100%;
     height: 100%;
 }
-/* media query for mobile device */
+/* header container end here */
+
+/* Flower section start here */
+/* flower container start here */
+.flower-container{
+    max-width: 1050px;
+    height: 630px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.flower-titels{
+    width: 394px;
+    height: 120px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* shared titles style */
+.title{
+    color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 48px;
+}
+.text{
+    color: rgba(39, 39, 39, 0.6);
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+}
+/* image box style here */
+.image-box{
+    width: 1050px;
+    height: 480px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.image-one, .image-two, .image-three{
+    width: 342px;
+    height: 450px;
+    border-radius: 300px 300px 0px 0px;
+}
+.image-one{
+    background: rgba(167, 33, 98, 0.15);
+}
+.image-two{
+    background: rgba(5, 151, 160, 0.15);
+}
+.image-three{
+    background: rgba(71, 125, 17, 0.15);
+}
+.image-size{
+    width: 280px;
+    height: 330px;
+    margin: 115px 0 0 30px;
+}
+.image-size img{
+    width: 100%;
+    height: 100%;
+}
+.sub{
+    text-decoration: underline;
+    margin-left: 110px;
+}
+/* Flower container end here */
+/* Flower section end here */
+
+
+
+
+
+
+
+/* Media query for mobile style */
 @media screen and (max-width:576px) {
+    body{
+        width: 200px;
+    }
     .header-container{
+        width: 420px;
+        gap: 0;
         height: 100%;
     }
     .header-content{
         flex-direction: column;
-        gap: 0;
     }
     .header-titles{
         width: 100%;
-        height: 50%;
+        height: 406px;
     }
     .header-text{
         margin-left: 5px;
     }
-    .header-image {
+    .header-btn{
+        padding-left: 0;
+    }
+   .header-image{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+   }
+    /* flower media query for mobile */
+    .flower-container{
+        margin-top: 0;
         width: 100%;
     }
+    .flower-titels{
+        width: 100%;
+        margin-bottom: 100px;
+        margin-left: 120px;
+    }
+    .image-box{
+        grid-template-columns: repeat(1, 1fr);
+        width: 420px;
+    }
+    .image-one, .image-two, .image-three{
+        width: 100%;
+    }
+    .image-size{
+        margin-left: 70px;
+    }
+    .image-style{
+        width: 250px;
+        height: 350px;
+    }   
 }
-/* header container end here */
